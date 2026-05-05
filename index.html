@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ice Cream Katta — handcrafted ice creams, sundaes, and shakes. Visit us for fresh flavors, friendly vibes, and fast online ordering."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#ff5aa5" />
+
+    <meta property="og:title" content="Ice Cream Katta" />
+    <meta
+      property="og:description"
+      content="Handcrafted ice creams, sundaes, and shakes. Order online or visit our shop."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css?v=1" />
+
+    <title>Ice Cream Katta | Home</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "IceCreamShop",
+        "name": "Ice Cream Katta",
+        "url": "./index.html",
+        "telephone": "+91-90000-00000",
+        "priceRange": "₹₹",
+        "servesCuisine": "Desserts",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Street",
+          "addressLocality": "Your City",
+          "addressRegion": "MH",
+          "postalCode": "000000",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "11:00",
+            "closes": "23:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Ice Cream Katta Home">
+          <span class="brand-mark" aria-hidden="true">🍨</span>
+          <span class="brand-name">Ice Cream Katta</span>
+        </a>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" data-site-nav>
+          <a class="nav-link is-active" href="./index.html">Home</a>
+          <a class="nav-link" href="./menu.html">Menu</a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="nav-link nav-cta" href="./order.html">
+            Order
+            <span class="cart-badge" data-cart-badge aria-label="Cart items">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="pill">Fresh. Creamy. Made with love.</p>
+            <h1 class="hero-title">Scoops of happiness at Ice Cream Katta</h1>
+            <p class="hero-subtitle">
+              Discover signature sundaes, classic scoops, and thick shakes crafted for every craving. Order online for fast pickup.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./order.html">Start an Order</a>
+              <a class="btn btn-ghost" href="./menu.html">Explore Menu</a>
+            </div>
+            <div class="hero-meta">
+              <div class="meta-item">
+                <span class="meta-k">Hours</span>
+                <span class="meta-v">11:00 AM – 11:00 PM</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-k">Pickup</span>
+                <span class="meta-v">Ready in 15–25 mins</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-k">Location</span>
+                <span class="meta-v">Search “Ice Cream Katta” on Maps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-card-top">
+                <span class="hero-card-title">Featured Flavors</span>
+                <span class="hero-card-chip">Today’s Picks</span>
+              </div>
+              <div class="hero-featured" data-featured-flavors></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Bestsellers</h2>
+            <p class="section-subtitle">Crowd favorites you’ll want again and again.</p>
+          </div>
+          <div class="grid cards" data-bestsellers></div>
+          <div class="section-actions">
+            <a class="btn btn-primary" href="./menu.html">See Full Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="two-col">
+            <div>
+              <h2 class="section-title">Why people love us</h2>
+              <p class="section-subtitle">
+                We keep it simple: quality ingredients, consistent taste, and friendly service. Perfect for families, dates, and late-night cravings.
+              </p>
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat-num">30+</div>
+                  <div class="stat-label">Flavors & combos</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">100%</div>
+                  <div class="stat-label">Made fresh daily</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">4.8★</div>
+                  <div class="stat-label">Customer rating</div>
+                </div>
+              </div>
+              <div class="hero-actions">
+                <a class="btn btn-ghost" href="./about.html">Our Story</a>
+                <a class="btn btn-primary" href="./contact.html">Visit Us</a>
+              </div>
+            </div>
+
+            <div class="review-panel">
+              <div class="review-panel-head">
+                <h3 class="review-panel-title">Customer Reviews</h3>
+                <p class="review-panel-subtitle">Real words from real sweet-tooths.</p>
+              </div>
+              <div class="reviews" data-reviews></div>
+              <div class="review-panel-foot">
+                <a class="text-link" href="./contact.html#social">Follow us for new flavors</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-banner">
+            <div>
+              <h2 class="cta-title">Ready for a scoop?</h2>
+              <p class="cta-subtitle">Build your cart, choose pickup, and we’ll get it ready.</p>
+            </div>
+            <a class="btn btn-primary" href="./order.html">Order Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand brand-footer">
+            <span class="brand-mark" aria-hidden="true">🍧</span>
+            <span class="brand-name">Ice Cream Katta</span>
+          </div>
+          <p class="footer-note">Handcrafted ice creams, sundaes, and shakes.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="./menu.html">Menu</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./order.html">Order</a>
+        </div>
+
+        <div class="footer-social" id="social">
+          <a class="social" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="social" href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="social" href="https://wa.me/919000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Ice Cream Katta</span>
+        <span class="footer-small">Made for fast, mobile-first ordering</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/js/site.js?v=1"></script>
+  </body>
+</html>

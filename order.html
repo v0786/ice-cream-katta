@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Order from Ice Cream Katta online. Add items to cart, adjust quantities, and place a pickup/delivery request."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#ff5aa5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css?v=1" />
+    <title>Ice Cream Katta | Order</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Ice Cream Katta Home">
+          <span class="brand-mark" aria-hidden="true">🍨</span>
+          <span class="brand-name">Ice Cream Katta</span>
+        </a>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" data-site-nav>
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./menu.html">Menu</a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="nav-link nav-cta is-active" href="./order.html">
+            Order
+            <span class="cart-badge" data-cart-badge aria-label="Cart items">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-inner">
+            <h1 class="page-title">Your Cart</h1>
+            <p class="page-subtitle">
+              Add items from the menu, update quantities here, then submit your pickup/delivery request.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="layout">
+            <section class="panel" aria-label="Cart items">
+              <h2 class="panel-title">Items</h2>
+              <div class="notice" data-cart-empty style="display: none">
+                Your cart is empty. Explore our <a class="text-link" href="./menu.html">menu</a> and add your favorites.
+              </div>
+              <div class="cart-list" data-cart-list></div>
+            </section>
+
+            <aside class="panel" aria-label="Checkout">
+              <h2 class="panel-title">Checkout</h2>
+              <div data-cart-totals></div>
+
+              <div class="success" data-order-confirm style="display: none; margin-top: 12px"></div>
+
+              <form data-checkout-form novalidate style="margin-top: 14px">
+                <div class="field">
+                  <span class="meta-k">Fulfillment</span>
+                  <div class="chips" role="radiogroup" aria-label="Fulfillment method">
+                    <label class="chip" style="display: inline-flex; align-items: center; gap: 8px">
+                      <input type="radio" name="fulfillment" value="pickup" checked />
+                      Pickup
+                    </label>
+                    <label class="chip" style="display: inline-flex; align-items: center; gap: 8px">
+                      <input type="radio" name="fulfillment" value="delivery" />
+                      Delivery
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field" style="margin-top: 12px">
+                  <span class="meta-k">Name</span>
+                  <input class="input" name="name" autocomplete="name" required />
+                  <span class="error" data-error-for="name"></span>
+                </div>
+
+                <div class="field" style="margin-top: 12px">
+                  <span class="meta-k">Phone</span>
+                  <input class="input" name="phone" type="tel" autocomplete="tel" required />
+                  <span class="error" data-error-for="phone"></span>
+                </div>
+
+                <div class="field" style="margin-top: 12px" data-delivery-wrap>
+                  <span class="meta-k">Delivery Address</span>
+                  <textarea class="textarea" name="address" data-delivery-address placeholder="House no, street, landmark, area…"></textarea>
+                  <span class="error" data-error-for="address"></span>
+                </div>
+
+                <div class="hero-actions" style="margin-top: 14px">
+                  <button class="btn btn-primary" type="submit">Place Order</button>
+                  <a class="btn btn-ghost" href="./menu.html">Add More</a>
+                </div>
+
+                <p class="help">
+                  This is a front-end order request for demo/deployment. Connect to your payment/delivery system or backend
+                  when ready.
+                </p>
+              </form>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand brand-footer">
+            <span class="brand-mark" aria-hidden="true">🍧</span>
+            <span class="brand-name">Ice Cream Katta</span>
+          </div>
+          <p class="footer-note">Handcrafted ice creams, sundaes, and shakes.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="./menu.html">Menu</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./order.html">Order</a>
+        </div>
+
+        <div class="footer-social" id="social">
+          <a class="social" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="social" href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="social" href="https://wa.me/919000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Ice Cream Katta</span>
+        <span class="footer-small">Made for fast, mobile-first ordering</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/js/site.js?v=1"></script>
+  </body>
+</html>

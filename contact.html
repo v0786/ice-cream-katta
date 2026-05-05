@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact Ice Cream Katta — store hours, map location, and a quick contact form. Reach us for bulk orders, events, and feedback."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#ff5aa5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css?v=1" />
+    <title>Ice Cream Katta | Contact</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Ice Cream Katta Home">
+          <span class="brand-mark" aria-hidden="true">🍨</span>
+          <span class="brand-name">Ice Cream Katta</span>
+        </a>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" data-site-nav>
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./menu.html">Menu</a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link is-active" href="./contact.html">Contact</a>
+          <a class="nav-link nav-cta" href="./order.html">
+            Order
+            <span class="cart-badge" data-cart-badge aria-label="Cart items">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-inner">
+            <h1 class="page-title">Contact & Location</h1>
+            <p class="page-subtitle">
+              Visit our shop, message us for bulk orders/events, or share feedback. We respond quickly during store hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="two-col">
+            <div class="panel">
+              <h2 class="panel-title">Find Us</h2>
+              <iframe
+                class="map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Ice%20Cream%20Katta&output=embed"
+                title="Ice Cream Katta map"
+              ></iframe>
+              <p class="help">
+                Tip: If the map shows a different place, search “Ice Cream Katta” in Google Maps and share the exact address/plus code.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h2 class="panel-title">Store Info</h2>
+              <div class="totals">
+                <div class="totals-row"><span>Hours</span><strong>11:00 AM – 11:00 PM</strong></div>
+                <div class="totals-row"><span>Phone</span><strong><a class="text-link" href="tel:+919000000000">+91 90000 00000</a></strong></div>
+                <div class="totals-row">
+                  <span>Email</span><strong><a class="text-link" href="mailto:hello@icecreamkatta.com">hello@icecreamkatta.com</a></strong>
+                </div>
+              </div>
+              <div class="hero-actions" id="social">
+                <a class="btn btn-ghost" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+                <a class="btn btn-ghost" href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+                <a class="btn btn-primary" href="https://wa.me/919000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+              </div>
+
+              <div class="notice" style="margin-top: 14px">
+                For custom/bulk orders, send us your date, quantity, and preferred flavors.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="two-col">
+            <div class="panel">
+              <h2 class="panel-title">Send a Message</h2>
+              <p class="section-subtitle">
+                This form is validated in the browser. For deployment, connect it to your email handler or backend endpoint.
+              </p>
+              <div class="success" data-contact-success style="display: none; margin-top: 12px">
+                Thanks! Your message is ready—our team will get back to you soon.
+              </div>
+            </div>
+
+            <form class="panel" data-contact-form novalidate>
+              <h2 class="panel-title">Contact Form</h2>
+              <div class="form-grid">
+                <label class="field">
+                  <span class="meta-k">Name</span>
+                  <input class="input" name="name" autocomplete="name" required />
+                  <span class="error" data-error-for="name"></span>
+                </label>
+                <label class="field">
+                  <span class="meta-k">Email</span>
+                  <input class="input" name="email" type="email" autocomplete="email" required />
+                  <span class="error" data-error-for="email"></span>
+                </label>
+              </div>
+              <label class="field" style="margin-top: 12px">
+                <span class="meta-k">Phone (optional)</span>
+                <input class="input" name="phone" type="tel" autocomplete="tel" />
+                <span class="error" data-error-for="phone"></span>
+              </label>
+              <label class="field" style="margin-top: 12px">
+                <span class="meta-k">Message</span>
+                <textarea class="textarea" name="message" required placeholder="Tell us what you need…"></textarea>
+                <span class="error" data-error-for="message"></span>
+              </label>
+              <div class="hero-actions" style="margin-top: 14px">
+                <button class="btn btn-primary" type="submit">Send Message</button>
+                <a class="btn btn-ghost" href="./order.html">Order Online</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand brand-footer">
+            <span class="brand-mark" aria-hidden="true">🍧</span>
+            <span class="brand-name">Ice Cream Katta</span>
+          </div>
+          <p class="footer-note">Handcrafted ice creams, sundaes, and shakes.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="./menu.html">Menu</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./order.html">Order</a>
+        </div>
+
+        <div class="footer-social">
+          <a class="social" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="social" href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="social" href="https://wa.me/919000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Ice Cream Katta</span>
+        <span class="footer-small">Made for fast, mobile-first ordering</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/js/site.js?v=1"></script>
+  </body>
+</html>
